@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { render, fireEvent, screen } from '@testing-library/react';
-import Counter from '../components/Counter';
+import Counter from '../components/Counter/Counter';
 
 describe('Counter', () => {
   it('should increase the number', () => {
