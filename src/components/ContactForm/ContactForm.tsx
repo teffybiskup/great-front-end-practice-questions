@@ -19,7 +19,7 @@
  */
 import React from 'react';
 import submitForm from './submitForm';
-import './ContactForm.sass';
+import './ContactForm.scss';
 
 function ContactForm() {
   return (

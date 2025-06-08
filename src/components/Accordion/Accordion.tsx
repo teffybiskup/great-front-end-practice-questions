@@ -10,7 +10,7 @@
  * 
  */
 import React, { useState } from 'react';
-import './Accordion.sass';
+import './Accordion.scss';
 
 function Accordion() {
   const [expandedItems, setExpandedItems] = useState<number[]>([]);
