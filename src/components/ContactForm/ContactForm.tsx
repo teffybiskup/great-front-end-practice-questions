@@ -23,45 +23,41 @@ import './ContactForm.scss';
 
 function ContactForm() {
   return (
-    <>
-      <h3>Contact Form</h3>
-      <form
-        onSubmit={submitForm}
-        action="https://questions.greatfrontend.com/api/questions/contact-form"
-        method="POST"
+    <form
+      onSubmit={submitForm}
+      action="https://questions.greatfrontend.com/api/questions/contact-form"
+      method="POST"
+    >
+      <label htmlFor="name">Name</label>
+      <input
+        data-testid="name-input"
+        id="name"
+        name="name"
+        type="text"
+      />
+
+      <label htmlFor="email">Email</label>
+      <input
+        data-testid="email-input"
+        id="email"
+        name="email"
+        type="email"
+      />
+
+      <label htmlFor="message">Message</label>
+      <textarea
+        data-testid="message-textarea"
+        id="message"
+        name="message"
+      />
+
+      <button 
+        data-testid="submit-button" 
+        type="submit"
       >
-        <label htmlFor="name">Name</label>
-        <input
-          data-testid="name-input"
-          id="name"
-          name="name"
-          type="text"
-        />
-
-        <label htmlFor="email">Email</label>
-        <input
-          data-testid="email-input"
-          id="email"
-          name="email"
-          type="email"
-        />
-
-        <label htmlFor="message">Message</label>
-        <textarea
-          data-testid="message-textarea"
-          id="message"
-          name="message"
-        />
-
-        <button 
-          data-testid="submit-button" 
-          type="submit"
-        >
-          Send
-        </button>
-      </form>
-      <hr/>
-    </>
+        Send
+      </button>
+    </form>
   );
 }
 

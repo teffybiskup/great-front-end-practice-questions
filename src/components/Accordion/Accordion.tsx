@@ -23,7 +23,6 @@ function Accordion() {
 
   return (
     <>
-      <h3>Accordion</h3>
       <div>
         <div 
           data-testid="first-item-title"
@@ -91,7 +90,6 @@ function Accordion() {
           and CSS.
         </div>
       </div>
-      <hr/>
     </>
   );
 }

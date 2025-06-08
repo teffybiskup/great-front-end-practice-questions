@@ -16,7 +16,6 @@ function Tabs() {
 
   return (
     <>
-      <h3>Tabs</h3>
       <div>
         <Button
           key="html"

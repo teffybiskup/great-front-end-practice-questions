@@ -11,32 +11,38 @@ import ComplexTabs from './components/Tabs/ComplexTabs';
 function App() {
   return (
     <div className="App">
-      <Counter/>
-      <Accordion/>
-      <ContactForm/>
-      <HolyGrail/>
-      <ProgressBars/>
-      <Tabs/>
       <ComplexTabs
         items={[
           {
-            value: 'html',
-            label: 'HTML',
-            content:
-              'The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.',
+            value: 'counter',
+            label: 'Counter',
+            content: <Counter/>,
           },
           {
-            value: 'css',
-            label: 'CSS',
-            content:
-              'Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.',
+            value: 'accordion',
+            label: 'Accordion',
+            content: <Accordion/>,
           },
           {
-            value: 'javascript',
-            label: 'JavaScript',
-            content:
-              'JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.',
+            value: 'contact-form',
+            label: 'Contact Form',
+            content: <ContactForm/>,
           },
+          {
+            value: 'holy-grail',
+            label: 'Holy Grail',
+            content: <HolyGrail/>,
+          },
+          {
+            value: 'progress-bars',
+            label: 'Progress Bars',
+            content: <ProgressBars/>,
+          },
+          {
+            value: 'tabs',
+            label: 'Tabs',
+            content: <Tabs/>,
+          }
         ]}
       />
     </div>

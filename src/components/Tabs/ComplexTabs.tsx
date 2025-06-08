@@ -6,13 +6,13 @@
  * At all times, only one panel's contents should be displayed — the one corresponding to the active tab's.
  * 
  */
-import React, { useState } from 'react';
+import React, { ReactElement, useState } from 'react';
 import './ComplexTabs.scss';
 
 type TabItem = {
   label: string;
   value: string;
-  content: string;
+  content: ReactElement | string;
 };
 
 type ComplexTabsProps = {
@@ -46,15 +46,13 @@ function ComplexTabs({ items }: ComplexTabsProps) {
             );
           })}
         </div>
-        <div>
-          {items.map(({ content, value: itemValue }) => (
-            <div key={itemValue} hidden={itemValue !== value}>
-              {content}
-            </div>
-          ))}
-        </div>
+        {items.map(({ label, content, value: itemValue }) => (
+          <div key={itemValue} hidden={itemValue !== value} style={{ width: "100%" }}>
+            <h3>{label}</h3>
+            {content}
+          </div>
+        ))}
       </div>
-      <hr/>
     </>
   );
 }

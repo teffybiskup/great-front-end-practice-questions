@@ -41,7 +41,6 @@ function ProgressBars() {
 
   return (
     <>
-      <h3>Progress Bars</h3>
       <Button data-testid="add-button" onClick={addProgressBar}>Add</Button>
       <div style={{justifyItems: "center"}}>
         {bars.map((bar) => (
@@ -54,7 +53,6 @@ function ProgressBars() {
           </div>
         ))}
       </div>
-      <hr/>
     </>
   );
 }

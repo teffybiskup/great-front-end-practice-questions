@@ -12,11 +12,7 @@ function Counter() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <h3>Counter</h3>
-      <Button data-testid="button" onClick={() => setCount(count + 1)}>Clicks: {count}</Button>
-      <hr/>
-    </>
+    <Button data-testid="button" onClick={() => setCount(count + 1)}>Clicks: {count}</Button>
   );
 }
 
