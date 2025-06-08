@@ -91,6 +91,7 @@ function Accordion() {
           and CSS.
         </div>
       </div>
+      <hr/>
     </>
   );
 }
