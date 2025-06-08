@@ -1,0 +1,49 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  header,
+  nav,
+  main,
+  aside,
+  footer {
+    padding: 12px;
+  }
+
+  header {
+    background-color: tomato;
+    height: 60px;
+  }
+
+  .columns {
+    display: flex;
+    flex-grow: 1;
+
+    nav {
+      background-color: coral;
+      flex-shrink: 0;
+    }
+
+    main {
+      background-color: moccasin;
+      flex: 1;
+    }
+
+    aside {
+      background-color: sandybrown;
+      flex-shrink: 0;
+    }
+
+    nav,
+    aside {
+      width: 100px;
+    }
+  }
+
+  footer {
+    background-color: slategray;
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
