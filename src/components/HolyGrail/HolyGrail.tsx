@@ -22,17 +22,19 @@ import './HolyGrail.scss';
 
 function HolyGrail() {
   return (
-    <div className="layout">
-      <h3>Holy Grail</h3>
-      <header>Header</header>
-      <div className="columns">
-        <nav>Navigation</nav>
-        <main>Main</main>
-        <aside>Sidebar</aside>
+    <>
+      <div className="layout">
+        <h3>Holy Grail</h3>
+        <header>Header</header>
+        <div className="columns">
+          <nav>Navigation</nav>
+          <main>Main</main>
+          <aside>Sidebar</aside>
+        </div>
+        <footer>Footer</footer>
       </div>
-      <footer>Footer</footer>
       <hr/>
-    </div>
+    </>
   );
 }
 
