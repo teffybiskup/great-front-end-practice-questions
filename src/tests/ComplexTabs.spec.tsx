@@ -33,12 +33,12 @@ describe("ComplexTabs", () => {
   it("should show the correct content when a tab is clicked", () => {
     render(<ComplexTabs items={items} />);
 
-    fireEvent.click(screen.getByText("CSS"));
+    fireEvent.click(screen.getByRole("button", { name: "CSS" }));
     expect(screen.getByText(items[1].content)).toBeVisible();
     expect(screen.getByText(items[0].content)).not.toBeVisible();
     expect(screen.getByText(items[2].content)).not.toBeVisible();
 
-    fireEvent.click(screen.getByText("JavaScript"));
+    fireEvent.click(screen.getByRole("button", { name: "JavaScript" }));
     expect(screen.getByText(items[2].content)).toBeVisible();
     expect(screen.getByText(items[0].content)).not.toBeVisible();
     expect(screen.getByText(items[1].content)).not.toBeVisible();
@@ -46,9 +46,9 @@ describe("ComplexTabs", () => {
 
   it("should apply the active class to the selected tab", () => {
     render(<ComplexTabs items={items} />);
-    const htmlBtn = screen.getByText("HTML");
-    const cssBtn = screen.getByText("CSS");
-    const jsBtn = screen.getByText("JavaScript");
+    const htmlBtn = screen.getByRole("button", { name: "HTML" });
+    const cssBtn = screen.getByRole("button", { name: "CSS" });
+    const jsBtn = screen.getByRole("button", { name: "JavaScript" });
 
     expect(htmlBtn.className).toContain("tabs-list-item--active");
     expect(cssBtn.className).not.toContain("tabs-list-item--active");
