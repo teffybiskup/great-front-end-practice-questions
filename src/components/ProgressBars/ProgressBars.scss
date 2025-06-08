@@ -1,0 +1,12 @@
+.bar {
+  margin: 10px 0;
+  background: #eee;
+  height: 15px;
+  width: 300px;
+  text-align: center;
+
+  .progress {
+    height: 100%;
+    background-color: green;
+  }
+}

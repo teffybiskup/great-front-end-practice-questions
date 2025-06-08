@@ -4,6 +4,7 @@ import Counter from './components/Counter/Counter';
 import Accordion from './components/Accordion/Accordion';
 import ContactForm from './components/ContactForm/ContactForm';
 import HolyGrail from './components/HolyGrail/HolyGrail';
+import ProgressBars from './components/ProgressBars/ProgressBars';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Accordion/>
       <ContactForm/>
       <HolyGrail/>
+      <ProgressBars/>
     </div>
   );
 }
