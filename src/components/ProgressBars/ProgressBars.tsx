@@ -9,12 +9,8 @@
  */
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
+import { Bar } from '../../types';
 import "./ProgressBars.scss"
-
-interface Bar {
-  id: number;
-  progress: number;
-}
 
 function ProgressBars() {
   const [bars, setBars] = useState<Bar[]>([]);
