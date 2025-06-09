@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
-import Counter from './components/Counter/Counter';
-import Accordion from './components/Accordion/Accordion';
-import ContactForm from './components/ContactForm/ContactForm';
-import HolyGrail from './components/HolyGrail/HolyGrail';
-import ProgressBars from './components/ProgressBars/ProgressBars';
-import Tabs from './components/Tabs/Tabs';
-import ComplexTabs from './components/Tabs/ComplexTabs';
+import { 
+  Accordion, 
+  Tabs, 
+  ComplexTabs, 
+  Counter, 
+  ContactForm, 
+  HolyGrail, 
+  ProgressBars, 
+  DataTable
+} from './components';
 
 function App() {
   return (
@@ -42,6 +45,11 @@ function App() {
             value: 'tabs',
             label: 'Tabs',
             content: <Tabs/>,
+          },
+          {
+            value: 'data-table',
+            label: 'Data Table',
+            content: <DataTable/>,
           }
         ]}
       />
